@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mermaids</title>
+    <style>
+      body {
+        background-color: #e9e4e6;
+      }
+      h1 {
+        color: #048998;
+        text-align: center;
+        font-size: 50px;
+        margin: 10px auto;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        color: #3bb4c1;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding-bottom: 2px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      hr {
+        border: 2px solid #048998;
+        margin-bottom: 30px;
+      }
+      img {
+        display: block;
+        border-radius: 50%;
+        margin: auto;
+        padding-bottom: 30px;
+      }
+      p {
+        color: #f6f5f5;
+        font-size: 17px;
+        line-height: 25px;
+        background: radial-gradient(
+          993px at 0.5% 98.5%,
+          rgb(0, 239, 247) 0%,
+          rgb(0, 122, 147) 46.7%,
+          rgb(0, 29, 72) 100.2%
+        );
+        text-align: center;
+        display: block;
+        margin: auto;
+        max-width: 75%;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .extraInfo {
+        color: #048998;
+        margin-top: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      a {
+        color: #048998;
+      }
+      a:visited {
+        color: #048998;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        padding: 15px;
+        line-height: 20px;
+        border: none;
+        border-radius: 30px;
+        background: radial-gradient(
+          993px at 0.5% 98.5%,
+          rgb(0, 239, 247) 0%,
+          rgb(0, 122, 147) 46.7%,
+          rgb(0, 29, 72) 100.2%
+        );
+        text-align: center;
+        color: #f6f5f5;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        font-size: 15px;
+        transition: 200ms;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      button:hover {
+        color: #048998;
+        cursor: pointer;
+      }
+      .closer {
+        display: block;
+        margin: auto 0;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bolder;
+        color: #3bb4c1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mermaids</h1>
+    <h2>Mermen, Merfellows, Merfolks, and Mer: All Are Welcome</h2>
+    <hr />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/141/original/mermaid-design-vector-39185793.jpg?1649126345"
+      Mermaid
+      Silhouette
+    />
+
+    <p>
+      In folklore, a mermaid is an aquatic creature with the head and upper body
+      of a female human and the tail of a fish. Mermaids appear in the folklore
+      of many cultures worldwide, including Europe, Asia, and Africa. They are
+      usually described as <em>beautiful sea maidens</em> whose song lure
+      sailors to their <strong>death</strong>, unless it's PG and then they are
+      beautiful sea maidens with lovely voices and fish for friends.
+    </p>
+    <div class="extraInfo">
+      The legend of mermaids spans across centuries and continents. These fabled
+      creatures continue to interest people (like myself), so much so that some
+      people can even make a profession out of it now!
+      <a href="https://www.livescience.com/39882-mermaid.html" target="_blank"
+        >Learn more about Mermaids</a
+      >
+    </div>
+    <button>Become A Mer!</button>
+    <br />
+    <span class="closer"> Coded by Melanie Richardson </span>
+    <script>
+      function becomeMermaid() {
+        let name = prompt("What is your name?");
+        let gender = prompt("Are you female/male/other?");
+        if (gender === "female") {
+          alert("Welcome Mermaid " + name + "!");
+        } else if (gender === "male") {
+          alert("Welcome Merman " + name + "!");
+        } else {
+          alert("Welcome Merfolk " + name + "!");
+        }
+      }
+      let mermaidButton = document.querySelector("button");
+      mermaidButton.addEventListener("click", becomeMermaid);
+    </script>
+  </body>
+</html>
